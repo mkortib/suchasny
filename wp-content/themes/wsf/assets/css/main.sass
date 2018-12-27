@@ -1,0 +1,2620 @@
+
+@import "vars"
+
+//@import "fonts"
+
+//@import "libs"
+
+// ::placeholder
+// 	color: #666
+
+
+
+/*********************** CUSTOM FONTS *****************************/
+
+
+@font-face
+  font-family: 'Alegreya Sans'
+  font-style: normal
+  font-weight: 400
+  src: url('/wp-content/themes/wsf/assets/fonts/AlegreyaSans-Regular.eot')
+  src: local('Alegreya Sans SC Regular'), local('AlegreyaSansSC-Regular'),
+  url('/wp-content/themes/wsf/assets/fonts/AlegreyaSans-Regular.eot?#iefix') format('embedded-opentype'),
+  url('/wp-content/themes/wsf/assets/fonts/AlegreyaSans-Regular.woff') format('woff'),
+  url('/wp-content/themes/wsf/assets/fonts/AlegreyaSans-Regular.ttf') format('truetype')
+
+
+
+@font-face
+  font-family: 'Alegreya Sans'
+  font-style: normal
+  font-weight: bold
+  src: url('/wp-content/themes/wsf/assets/fonts/AlegreyaSans-Bold.eot')
+  src: local('Alegreya Sans SC Bold'), local('AlegreyaSansSC-Bold'),
+  url('/wp-content/themes/wsf/assets/fonts/AlegreyaSans-Bold.eot?#iefix') format('embedded-opentype'),
+  url('/wp-content/themes/wsf/assets/fonts/AlegreyaSans-Bold.woff') format('woff'),
+  url('/wp-content/themes/wsf/assets/fonts/AlegreyaSans-Bold.ttf') format('truetype')
+
+
+/*****************MIXINS**************/
+
+
+@mixin alegReg()
+  font-family: 'Alegreya Sans', sans-serif
+  font-weight: normal
+  font-style: normal
+
+@mixin alegBold()
+  font-family: 'Alegreya Sans', sans-serif
+  font-weight: bold
+  font-style: normal
+
+
+
+/************ CUSTOM STYLES ********************/
+
+*
+  margin: 0
+  padding: 0
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+
+a
+  text-decoration: none
+
+
+button
+  outline: none
+  cursor: pointer
+  border: none
+
+
+input
+  outline: none
+
+ul
+  list-style-type: none
+
+::selection
+  background-color: $accent
+  color: #fff
+
+
+body, html
+  @include alegReg()
+  font-size: 100%
+  min-width: 320px
+  position: relative
+  line-height: 1.65
+  overflow-x: hidden
+  min-height: 100vh
+  -webkit-text-size-adjust: none
+
+body
+// background-color: #161936
+// color: $black
+
+
+.h1, .h2, .h3, .h4, .h5, .h6
+  text-transform: uppercase
+  line-height: 1.4
+
+.text-center
+  text-align: center
+
+.button
+  @include alegReg()
+  display: inline-block
+  border: 2px solid $accent
+  color: $accent
+  text-decoration: none
+  background-color: transparent
+  padding: 11px 13px
+  font-size: 18px
+  @include alegBold()
+  letter-spacing: 1px
+  border-radius: 2px
+  text-align: center
+  position: relative
+  font-weight: bold
+  width: 100%
+  max-width: 245px
+  outline: none
+  transition: all .3s ease
+  cursor: pointer
+  text-decoration: none
+  &:focus, &:hover
+    background: linear-gradient(187.7deg, #F4E0B1 21.23%, #D4A654 129.34%)
+    box-shadow: -5px 3px 11px rgba(24, 10, 42, 0.246)
+    color: $blue
+    text-decoration: none
+  &:hover
+    background: linear-gradient(187.7deg, #F4E0B1 21.23%, #D4A654 129.34%)
+    box-shadow: -5px 3px 11px rgba(24, 10, 42, 0.246)
+    color: $blue
+  &:active
+    background: linear-gradient(187.7deg, #F4E0B1 21.23%, #D4A654 129.34%)
+    box-shadow: -5px 3px 11px rgba(24, 10, 42, 0.246)
+    color: $blue
+
+.butt_blue
+  @include alegReg()
+  display: inline-block
+  border: 2px solid $blue
+  color: #fff
+  text-decoration: none
+  background-color: $blue
+  padding: 8px 13px
+  font-size: 18px
+  @include alegBold()
+  letter-spacing: 1px
+  border-radius: 2px
+  text-align: center
+  position: relative
+  font-weight: bold
+  width: 100%
+  max-width: 245px
+  outline: none
+  transition: all .3s ease
+  cursor: pointer
+  &:focus, &:hover
+    text-decoration: none
+    color: $blue
+    background-color: transparent
+  &:hover
+    background: transparent
+    box-shadow: -5px 3px 11px rgba(24, 10, 42, 0.246)
+  &:active
+    color: $blue
+    background-color: transparent
+
+
+.butt_sky
+  @include alegReg()
+  display: inline-block
+  color: #fff
+  text-decoration: none
+  background-color: #2965BF
+  border: 2px solid #2965BF
+  padding: 8px 13px
+  font-size: 18px
+  @include alegBold()
+  letter-spacing: 1px
+  border-radius: 2px
+  text-align: center
+  position: relative
+  font-weight: bold
+  width: 100%
+  max-width: 240px
+  outline: none
+  transition: all .3s ease
+  cursor: pointer
+  &.sky_blue
+    &:focus, &:hover
+      background: transparent
+      text-decoration: none
+      color: #fff
+    &:hover
+      background: transparent
+      color: #fff
+    &:active
+      color: #fff
+      background-color: transparent
+    // box-shadow: -5px 3px 11px rgba(24, 10, 42, 0.246)
+
+
+  &:focus, &:hover
+    text-decoration: none
+    color: $blue
+  &:hover
+    background: transparent
+  // box-shadow: -5px 3px 11px rgba(24, 10, 42, 0.246)
+  &:active
+    background-color: transparent
+
+.onepage-wrapper
+  height: 100vh
+  .section
+    height: 100vh
+    width: calc(100% - 310px)
+
+.cus_pad
+  color: $blue
+  padding: 0 118px 0 120px
+
+
+.slick-dots li button
+  opacity: 0
+
+.ishome
+  height: 100vh
+  position: relative
+  .main
+    position: absolute
+    top: 0
+  .first
+    &::after
+      position: absolute
+      content: ''
+      background-image: url('/wp-content/themes/wsf/assets/img/main/main_slide_decor.svg')
+      max-width: 900px
+      transition: all .5s ease
+      width: 100%
+      height: 100vh
+      top: 0
+      left: -95px
+      background-size: cover
+      background-position: center
+  .first_mod
+    &::after
+      position: absolute
+      content: ''
+      background-image: url('/wp-content/themes/wsf/assets/img/main/main_slide_decor.svg')
+      max-width: 900px
+      transition: all .5s ease
+      width: 100%
+      height: 100vh
+      top: 0
+      left: -95px
+      background-size: cover
+      background-position: center
+      animation: move_decor 1s ease-in-out
+
+
+  .class
+    margin-top: 20px
+
+  section
+    position: relative
+    // height: 100vh
+    // width: 100%
+    &::before
+      position: absolute
+      content: ''
+      background-image: url('/wp-content/themes/wsf/assets/img/main/mouse.svg')
+      z-index: 20
+      bottom: 60px
+      width: 26px
+      background-size: cover
+      background-position: center
+      height: 58px
+      left: 50%
+      transform: translateX(-50%)
+      animation: mouse 1.5s infinite ease-in-out
+    z-index: 20
+    &:nth-child(1)
+      background-image: url('/wp-content/themes/wsf/assets/img/main/slide1.png')
+      background-size: cover
+      background-position: center
+
+    &:nth-child(2)
+      background-image: url('/wp-content/themes/wsf/assets/img/main/slide2.png')
+      background-size: cover
+      background-position: center
+    &:nth-child(3)
+      background-image: url('/wp-content/themes/wsf/assets/img/main/slide3.png')
+      background-size: cover
+      background-position: center
+    &:nth-child(4)
+      background-image: url('/wp-content/themes/wsf/assets/img/main/slide4.png')
+      background-size: cover
+      background-position: center
+
+
+.slide_header
+  position: relative
+  z-index: 2
+  max-width: 732px
+  width: 100%
+  margin: 240px 0 0 180px
+  padding: 0 0 130px 0
+  h2
+    font-size: 58px
+    @include alegBold()
+    color: #fff
+    text-transform: none
+    line-height: 1.2
+  p
+    @include alegReg()
+    font-size: 18px
+    color: #fff
+    max-width: 441px
+    width: 100%
+    margin-top: 20px
+  .button
+    position: absolute
+    left: 0
+    bottom: 0
+
+
+.slick-slide
+  outline: none
+
+/******** HEADER *************/
+
+header
+  position: fixed
+  z-index: 9999
+  height: 100vh
+  width: 100%
+  max-width: 315px
+  background-color: $blue
+  box-shadow: 5px 0px 43px rgba(0, 0, 0, 0.2)
+
+  .location
+    text-align: center
+    margin: 20px 0
+    .fas
+      color: $accent
+      font-size: 20px
+    p
+      color: rgba($accent, .5)
+      line-height: 1.2
+      font-size: 14px
+      margin-top: 10px
+      @include alegReg()
+    .soc
+      display: flex
+      justify-content: center
+      a:first-child
+        margin-right: 40px
+      .fab
+        color: $accent
+        font-size: 18px
+
+  .phone
+    padding: 20px 0
+    position: relative
+    text-align: center
+    p
+      margin: 0
+      color: #fff
+      font-size: 36px
+      @include alegReg()
+      text-align: center
+      position: relative
+    a
+      text-decoration: none
+      color: rgba($accent, .5)
+      font-size: 18px
+      @include alegBold()
+      text-align: center
+      display: inline-block
+      border-bottom: 1px solid rgba($accent, .5)
+      line-height: 1
+    &::after, &::before
+      content: ''
+      width: 80%
+      position: absolute
+      height: 1px
+      background-color: #1B182E
+      left: 50%
+      transform: translateX(-50%)
+      left: 50%
+    &::after
+      top: 0
+    &::before
+      bottom: 0
+
+
+
+  .head_nav
+    padding: 30px 0 0 0
+    text-align: center
+    color: #fff
+    .logo
+      img
+        width: 166px
+        height: auto
+
+  .change_lang
+    margin-top: 23px
+    ul
+      justify-content: center
+      display: flex
+      a
+        font-size: 16px
+        color: #fff
+        text-transform: uppercase
+        text-decoration: none
+        @include alegReg()
+      .language-chooser-item
+        &-ru
+          padding-right: 30px
+          position: relative
+          &::after
+            position: absolute
+            content: ''
+            width: 16px
+            height: 1px
+            background-color: #fff
+            right: 5px
+            top: 50%
+            transform: translateY(-50%)
+        &.active
+          a
+            color: rgba(#fff, .5)
+      //li
+      //  &:first-child
+      //    padding-right: 30px
+      //    position: relative
+      //    &::after
+      //      position: absolute
+      //      content: ''
+      //      width: 16px
+      //      height: 1px
+      //      background-color: #fff
+      //      right: 5px
+      //      top: 50%
+      //      transform: translateY(-50%)
+    //a
+    //  font-size: 16px
+    //  color: #fff
+    //  text-transform: uppercase
+    //  text-decoration: none
+    //  @include alegReg()
+    //  &.cur_leng
+    //    color: rgba(#fff, .5)
+
+  .main_nav
+    a
+      color: #fff
+      text-transform: uppercase
+      font-size: 18px
+      @include alegReg()
+      transition: all .3s ease
+      text-decoration: none
+    li
+      margin: 20px 0
+      text-align: center
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        width: 5px
+        height: 5px
+        background-color: $accent
+        left: 23px
+        top: 50%
+        opacity: 0
+        transform: translateY(-50%)
+      &.current-menu-item
+        &:after
+          opacity: 1
+        a
+          color: rgba(#fff,  .5)
+      &:focus, &:hover
+        a
+          text-decoration: none
+          color: rgba(#fff,  .5)
+// a
+// 	&:visited
+// 		color: rgba(#fff,  .5)
+
+// &:focus, &:hover
+// 	text-decoration: none
+// 	color: #fff
+// &:hover
+// 	background-color: $orange
+// &:active
+// 	background-color: $orange
+.wsf_studio
+  margin-top: 50px
+  display: flex
+  justify-content: center
+  align-items: center
+  p
+    color: rgba(#fff, .2)
+    @include alegReg()
+    font-size: 14px
+    margin: 0
+  svg
+    width: 85px
+    height: auto
+    margin-left: 10px
+    path
+      fill: rgba(#fff, .4)
+      transition: all .5s ease
+    &:hover
+      path
+        fill: rgba(#fff, .8)
+
+
+.onepage-pagination
+  right: 50px
+  li
+    margin: 10px 0
+    a
+      &:before
+        width: 10px
+        height: 10px
+        background: transparent
+        border: 1px solid #EEB039
+      &.active:before
+        width: 14px
+        height: 14px
+        background: #EEB039
+        border: 1px solid #EEB039
+
+
+
+/***** MOBILE TOP *****/
+
+.mobile_cont
+  z-index: 40
+  position: absolute
+  display: none
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: rgba($blue, .5)
+
+.mobile_top
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 35
+  display: none
+  background-color: $blue
+  color: #fff
+  margin: auto
+  padding: 15px 0
+  box-shadow: 0px 5px 43px rgba(0, 0, 0, 0.2)
+  // &.scroll
+  // 	position: fixed
+  .logo
+    width: 162px
+    height: auto
+  .burger
+    position: relative
+    width: 30px
+    height: 20px
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    span
+      position: absolute
+      width: 32px
+      height: 3px
+      top: 50%
+      transform: translateY(-50%)
+      left: 0
+      background-color: $accent
+    &::after, &::before
+      position: absolute
+      width: 32px
+      height: 3px
+      background-color: #fff
+      left: 0
+      content: ''
+    &::after
+      top: 0
+    &::before
+      bottom: 0
+    &.active
+      z-index: 42
+      span
+        display: none
+      &::after
+        transform: rotate(45deg)
+        top: 8px
+      &::before
+        transform: rotate(-45deg)
+        bottom: 9px
+  .phone
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    display: flex
+    justify-content: center
+    align-items: center
+    p
+      margin: 0
+      font-size: 24px
+      @include alegReg()
+    .fas
+      font-size: 20px
+      margin-right: 20px
+      color: rgba($accent, .5)
+  .change_lang
+    margin-top: 0
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    ul
+      margin: 0
+    ul
+      margin: 0
+      justify-content: center
+      display: flex
+      a
+        font-size: 16px
+        color: #fff
+        text-transform: uppercase
+        text-decoration: none
+        @include alegReg()
+      .language-chooser-item
+        &-ru
+          padding-right: 30px
+          position: relative
+          &::after
+            position: absolute
+            content: ''
+            width: 16px
+            height: 1px
+            background-color: #fff
+            right: 5px
+            top: 50%
+            transform: translateY(-50%)
+        &.active
+          a
+            color: rgba(#fff, .5)
+
+
+/**** ABOUT PAGE *****/
+
+.page
+  padding: 40px 0 0 0
+  background-color: #f6f6f6
+  width: calc(100% - 315px)
+  position: absolute
+  right: 0
+  overflow-y: auto
+  overflow-x: hidden
+  height: 100vh
+
+.page_all
+  position: relative
+
+.page_about
+	.main_foot
+		top: 200px
+
+  //.page_all
+    //overflow: hidden
+
+.concept
+  margin-top: 70px
+  padding: 0 118px 0px 120px
+
+
+.conc_fl
+  justify-content: space-between
+
+.conc_sl_wr
+  position: relative
+
+.conc_descr
+  padding-right: 50px
+
+.page
+  h1
+    margin-left: 135px
+    font-size: 52px
+    @include alegBold()
+    color: $blue
+  .path
+    display: flex
+    // width: 100%
+    // max-width: 200px
+    margin: 0 0 0 135px
+    li
+      position: relative
+      padding-right: 20px
+      a
+        font-size: 14px
+        text-decoration: none
+        @include alegReg()
+        color: rgba(#1C1934, .5)
+      &:nth-child(2n)
+        position: relative
+        &::after
+          content: '-'
+          font-size: 20px
+          position: absolute
+          color: rgba(#1C1934, .5)
+          left: -12px
+          top: -3px
+
+.head_style
+  h2
+    @include alegBold()
+    font-size: 36px
+    color: $blue
+    margin: 0 0 10px 0
+    position: relative
+    &::after
+      content: ''
+      width: 200px
+      height: 2px
+      background-color: $blue
+      position: absolute
+      left: -220px
+      top: 50%
+      transfom: translateY(-50%)
+  p
+    margin: 0 0 25px 0
+    color: rgba($blue, .7)
+    font-size: 18px
+    @include alegReg()
+  .butt_blue
+    margin-top: 50px
+
+
+.conc_slider
+  position: relative
+  .slide
+    height: 434px
+    // box-shadow: 0px 4px 39px rgba(10, 4, 22, 0.324)
+    max-width: 100%
+    img
+      height: 100%
+      width: 100%
+// position: absolute
+// max-width: 100%
+// width: 100%
+// height: 100%
+
+.conc_wr
+  position: relative
+
+.conc_nav
+  position: absolute
+  right: 30px
+  bottom: -50px
+  z-index: 20
+
+.slide_nav
+  .fas
+    font-size: 40px
+    cursor: pointer
+  .fa-caret-left
+    color: rgba(#0C1429, .4)
+    margin-right: 20px
+  .fa-caret-right
+    color: #0C1429
+
+
+.advant_items
+  margin-top: 140px
+  display: flex
+  .f_col, .s_col
+    display: flex
+  .item
+    position: relative
+    @include alegReg()
+    display: flex
+    align-items: center
+    padding-right: 40px
+    padding-left: 30px
+    .num
+      font-size: 64px
+      color: $blue
+    .adv_descr
+      color: $text
+      font-size: 24px
+      line-height: 1.1
+      margin: 0 0 0 15px
+    &::before
+      content: ''
+      height: 46px
+      width: 2px
+      background-color: rgba(#000, .1)
+      position: absolute
+      right: 0
+      top: 50%
+      transform: translateY(-50%)
+    &:last-child
+      .num
+        white-space: nowrap
+  .f_col
+    &:first-child
+      padding-left: 10px
+      &::after
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        width: 16px
+        height: 116px
+        background: linear-gradient(189.69deg, #ECC785 27.95%, #D6AE67 102.59%)
+
+
+
+.infra
+  padding: 0 118px 0px 120px
+  .head_style
+    margin-top: 90px
+    margin-bottom: 30px
+
+.infra_items
+  .ifr_img
+    cursor: pointer
+    // height: 270px
+    max-width: 100%
+    margin-bottom: 60px
+    position: relative
+    img
+      display: block
+      max-width: 100%
+      width: 100%
+    .descr
+      position: absolute
+      left: 50%
+      top: 50%
+      width: 100%
+      transform: translate(-50%, -50%)
+      height: 100%
+      color: #fff
+      font-size: 18px
+      text-align: center
+      font-size: 18px
+      box-shadow: 0px 0px 25px rgba(12, 12, 12, 0.3)
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      opacity: 0
+      transition: all .5s ease
+      li
+        transition: all .5s ease
+        margin-top: -10px
+      &.blue
+        background: #5448A3
+      &.red
+        background: #ED7272
+      &.lemon
+        background: #EAD58B
+      &.pink
+        background: #9D4D95
+      &.sky
+        background: #5D88BA
+      &.green
+        background: #48AB87
+      &.grey
+        background: #7F7F7F
+      &.viol
+        background: #7860D9
+      &.yel
+        background: #F5D278
+    &:hover
+      .descr
+        opacity: 1
+        li
+          margin-top: 0
+
+
+.consult
+  margin-top: 20px
+  padding: 20px 0 30px 0
+  background-color: $blue
+  width: 100%
+  left: 50%
+  transform: translateX(-50%)
+  position: relative
+  color: #fff
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  h2
+    font-size: 36px
+    @include alegBold()
+  p
+    font-size: 18px
+  .butt_sky
+    padding: 5px 13px
+    margin: 25px 0 20px 0
+  .buy_link
+    text-decoration: none
+    @include alegBold()
+    font-size: 18px
+    color: #fff
+    display: inline-block
+    line-height: 1.1
+    border-bottom: 1px solid #fff
+    transition: all .3s ease
+    &:hover
+      opacity: .4
+
+
+.s_gallery
+  padding: 0 118px 0px 120px
+  position: relative
+  top: 60px
+  .head_style
+    margin-bottom: 100px
+
+  .slide
+    width: 100%
+    height: 636px
+    img
+      width: 100%
+      max-width: 100%
+      display: block
+      height: 100%
+
+  .slides_gal
+    position: relative
+  .slider_wr
+    position: relative
+    .gal_nav
+      position: absolute
+      top: -80px
+      right: 20px
+      .fas
+        font-size: 50px
+      .fa-caret-left
+        margin-right: 50px
+
+
+
+
+/** Footer **/
+
+.main_foot
+  padding: 30px 0 20px 0
+  color: #fff
+  position: relative
+  top: 420px
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  background-color: $blue
+  transform: translate(-50%)
+  left: 50%
+  h2
+    @include alegBold()
+    font-size: 36px
+    text-align: center
+    margin-bottom: 40px
+  .form_call
+    display: flex
+    position: relative
+    flex-direction: column
+    input
+      max-width: 240px
+      font-size: 18px
+      width: 100%
+      text-align: center
+      border: 2px solid rgba(#F2F2F2, .4)
+      color: rgba(#F2F2F2, .4)
+      margin-bottom: 30px
+      outline: none
+      background: transparent
+      padding: 5px 30px
+      &::placeholder
+        color: rgba(#F2F2F2, .4)
+    .butt_sky
+      margin-top: 30px
+      padding: 5px 0
+      font-size: 18px
+      text-transform: none
+      .fas
+        margin-right: 10px
+
+.foot_bot
+  position: relative
+  width: 100%
+  margin-top: 50px
+  .logo
+    img
+      width: 165px
+      height: auto
+
+  .copy
+    color: #fff
+    font-size: 18px
+    display: flex
+    justify-content: center
+    margin: 0
+
+  .soc
+    display: flex
+    justify-content: flex-end
+    .fab
+      color: #EEC880
+      font-size: 20px
+      margin-right: 20px
+      &:last-child
+        margin-left: 0
+      &:first-child
+        margin-left: 0
+    a
+      text-decoration: none
+      font-size: 18px
+      color: #fff
+      &:first-child
+        margin-right: 20px
+
+
+/**** BUY PAGE ****/
+
+.s_buy_procces
+  margin-top: 40px
+
+.buy_proc
+  margin-top: 40px
+  .item
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    .it_n
+      font-size: 36px
+      color: #fff
+      @include alegBold()
+      width: 34px
+      height: 34px
+      background-color: $blue
+      line-height: 32px
+      text-align: center
+      display: inline-block
+    img
+      margin: 25px 0
+      width: auto
+      height: 166px
+    p
+      @include alegBold()
+      font-size: 24px
+      color: $blue
+      position: relative
+      padding-bottom: 10px
+      &::after
+        content: ''
+        width: 34px
+        height: 8px
+        background-color: $green
+        position: absolute
+        bottom: 0
+        left: 0
+
+.s_doc
+  margin-top: 80px
+
+.doc_cond
+  margin-top: 60px
+  .doc_img
+    img
+      width: 100%
+      height: auto
+  .doc_descr
+    margin-left: 50px
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    li
+      color: rgba(#322E4B, .83)
+      font-size: 24px
+      @include alegBold()
+      position: relative
+      margin-bottom: 30px
+      padding-left: 50px
+      &::after
+        width: 28px
+        height: 28px
+        content: ''
+        position: absolute
+        border-radius: 50%
+        background-color: $green
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+
+.s_calculate
+  margin-top: 80px
+  .calculate
+    margin: 80px auto 0
+    max-width: 900px
+    width: 100%
+    position: relative
+
+.calculate
+  .cal_item
+    position: relative
+    z-index: 2
+  input
+    outline: none
+    font-size: 18px
+    color: $blue
+    border: none
+    background: transparent
+    text-align: center
+  h4
+    color: rgba(#322E4B, .83)
+    @include alegBold()
+    font-size: 24px
+  .cal_h
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 270px
+    width: 100%
+    padding: 0px 14px
+    border: 2px solid rgba(#0C1429, .1)
+    line-height: 2.3
+  .frst_inst
+    .do
+      color: #0C1429
+      font-size: 18px
+    input
+      max-width: 60px
+      width: 100%
+    select
+      option
+        font-size: 14px
+        color: #0C1429
+    .inst_sel
+      position: relative
+      &::before
+        content: ''
+        width: 1px
+        height: 26px
+        background-color: rgba(#322E4B, .4)
+        position: absolute
+        left: 0
+        bottom: 50%
+        transform: translateY(50%)
+      .current
+        position: relative
+        top: 5%
+        transform: translateY(-50%)
+        font-size: 14px
+
+  .square
+    .ot, .do
+      color: $text
+      font-size: 18px
+      position: relative
+    .ot
+      &::after
+        content: 'м²'
+        position: absolute
+        top: 2px
+        left: 85px
+        font-size: 16px
+        color: #0C1429
+    .do
+      &::after
+        content: 'м²'
+        position: absolute
+        top: 2px
+        right: -85px
+        font-size: 16px
+        color: #0C1429
+    input
+      border-bottom: 2px solid rgba(#0C1429, .1)
+      max-width: 72px
+      line-height: 1.4
+      width: 100%
+      text-align: center
+  // .room_sel
+  // 	// text-align: center
+  // 	.current
+  // 		position: relative
+  // 		top: 0
+
+  .but_calc
+
+.room_bl
+  position: relative
+  .room_sel
+    left: 50%
+    transform: translateX(-50%)
+    .current
+      position: relative
+      top: 0
+
+
+// SELECT STILE
+
+.nice-select
+  background-color: transparent
+  border: none
+  padding: 0 22px 0 10px
+  .current
+    position: relative
+    top: 5%
+    transform: translateY(-50%)
+    font-size: 18px
+  &::after
+    content: '\f0d7'
+    font-family: 'Font Awesome 5 Free'
+    font-weight: 900
+    color: rgba(#322E4B, .4)
+    border: none
+    transform: rotate(0)
+    top: 9%
+    font-size: 14px
+    transition: all .5s ease
+  // right: 20px
+  &.open:after
+    content: '\f0de'
+    font-family: 'Font Awesome 5 Free'
+    font-weight: 900
+    color: rgba(#322E4B, .4)
+    border: none
+    transform: rotate(0)
+    // top: 20%
+    font-size: 14px
+    transition: all .5s ease
+
+.room_sel
+  .nice-select::before
+    display: none
+
+.but_calc
+  display: block
+  margin: 60px auto 0
+  max-width: 295px
+  .fab
+    position: relative
+    top: 1px
+    font-weight: 400
+    font-size: 20px
+    padding-left: 10px
+
+
+
+.s_choose
+  margin-top: 70px
+
+.plans_buy
+  position: relative
+  margin-top: 140px
+  .buy_plan_nav
+    position: absolute
+    top: -85px
+    right: 27px
+  .more_pl
+    margin-top: 60px
+    font-size: 18px
+    @include alegBold()
+    text-decoration: none
+    border-bottom: 1px solid $blue
+    color: $blue
+    line-height: 1.2
+    margin-left: 80px
+    display: inline-block
+    transition: all .3s ease
+    &:hover
+      // transform: scale(1.1)
+      color: rgba(#0C1429, .4)
+      border-color: rgba(#0C1429, .4)
+
+.buy_slide_plan
+  .item
+    display: flex
+    flex-direction: column
+    align-items: center
+    img
+      max-width: 100%
+      height: 305px
+      position: relative
+      display: block
+      &::after
+        content: ''
+        display: block
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        background: red
+      //&::before
+      //  content: "\f06e"
+      //  font-family: 'Font Awesome 5 Free'
+      //  font-weight: 900
+      //  position: absolute
+      //  font-size: 29px
+      //  top: 50%
+      //  left: 50%
+      //  color: #fff
+      //  transform: translate(-50%, -50%)
+
+    h4
+      color: $blue
+      font-size: 24px
+      @include alegBold()
+      margin: 44px 0 10px 0
+    p
+      margin: 0
+      font-size: 18px
+      color: $blue
+    .butt_blue
+      margin-top: 20px
+
+
+.page_buy
+  .main_foot
+    top: 100px
+
+
+/******** PLANS PAGE ***********/
+
+.page_plans
+  .main_foot
+    top: 140px
+
+.s_flats
+  margin-top: 60px
+
+.flats
+  .flat_nav
+    display: flex
+    margin-top: 35px
+    margin-bottom: 80px
+    li
+      margin-right: 40px
+      a
+        @include alegBold()
+        font-size: 24px
+        color: $blue
+        position: relative
+        padding-left: 15px
+        text-decoration: none
+        &::after
+          position: absolute
+          content: ''
+          width: 8px
+          height: 8px
+          border: 1px solid $blue
+          border-radius: 50%
+          left: 0
+          top: 50%
+          transform: translateY(-50%)
+          transition: all .3s ease
+        &.act_fl
+          &::after
+            background-color: $blue
+            border-radius: 0
+      &:hover, &:active, &:focus
+        a::after
+          background-color: $blue
+          border-radius: 0
+
+  .item
+    display: flex
+    flex-direction: column
+    align-items: center
+    img
+      max-width: 100%
+      height: 373px
+      margin: auto
+      display: block
+    .permal
+      height: 373px
+      width: 100%
+      position: relative
+      //&::after
+      //  width: 100%
+      //  height: 100%
+      //  content: ''
+      //  position: absolute
+      //  top: 0
+      //  left: 0
+      //  background-color: rgba(#ccc, .4)
+      //  opacity: 0
+      //  transition: all .3s ease
+      &::before
+        content: "\f06e"
+        position: absolute
+        font-family: 'Font Awesome 5 Free'
+        font-size: 20px
+        z-index: 2
+        color: #fff
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%) scale(.5)
+        transition: all .3s ease
+        opacity: 0
+      &:hover
+        &::after
+          opacity: 1
+        &::before
+          opacity: 1
+          transform: translate(-50%, -50%) scale(1.8)
+
+    h4
+      color: $blue
+      font-size: 24px
+      @include alegBold()
+      margin: 44px 0 10px 0
+    p
+      margin: 0
+      font-size: 18px
+      color: $blue
+    .butt_blue
+      margin-top: 20px
+      margin-bottom: 75px
+
+
+.s_help
+  text-align: center
+  margin-top: 20px
+  h2
+    color: $blue
+    font-size: 36px
+    @include alegBold()
+    position: relative
+  .help_descr
+    font-size: 18px
+    color: $blue
+    text-align: center
+    margin-bottom: 0
+  .calculate
+    margin-top: 80px
+
+
+.form_style
+  position: relative
+  margin-top: 60px
+  display: flex
+  justify-content: center
+  flex-direction: column
+  align-items: center
+  input[name=name], input[type=tel], input[type=email]
+    max-width: 240px
+    width: 100%
+    border: none
+    background-color: transparent
+    color: rgba($blue, .4)
+    border-bottom: 1px solid #332F4C
+    font-size: 18px
+    padding: 10px 0 0 0
+    text-align: center
+    margin-bottom: 30px
+  p
+    margin-top: 30px
+    font-size: 14px
+    color: rgba($blue, .4)
+  .but_form
+    display: flex
+    align-items: center
+    .radio_wrap
+      display: flex
+      align-items: center
+    .butt_sky
+    // padding: 0 13px
+    .radio
+      font-size: 14px
+      margin-right: 25px
+      span
+        left: -5px
+        top: 2px
+    label
+      margin-bottom: 0
+
+
+
+
+
+
+// RADIO INPUT
+
+/****************************InputRadio***************************/
+
+
+.radio *
+  cursor: pointer
+
+
+.radio input
+  opacity: 0
+
+
+.radio span
+  position: relative
+  display: inline-block
+  margin-left: -25px
+  vertical-align: top
+  width: 16px
+  height: 16px
+  border-radius: 2px
+  border: 2px solid $blue
+//box-shadow: 4px 0px 22px 0px rgba(0, 0, 0, 0.12);
+
+
+.radio:hover span
+  border-color: $blue
+
+
+.radio span:before
+  content: "" /* comment content to use custom icon classes */
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  opacity: 0
+  text-align: center
+  font-size: 10px
+  line-height: 10px
+  vertical-align: middle
+  color: #ccc
+
+
+.radio
+  span:after
+    content: ''
+    width: 8px
+    height: 8px
+    background-color: transparent
+    position: absolute
+    right: 3px
+    top: 3px
+    border-radius: 50%
+    z-index: 2
+
+
+
+/* override for radio */
+.radio span
+  border-radius: 50%
+
+.radio span:before
+  z-index: 3
+  content: ""
+  width: 8px
+  height: 8px
+  margin: 2px auto
+  background-color: $blue
+  border-radius: 100px
+
+
+.radio input[type=radio]:checked + span
+  background-color: #fff
+
+
+.radio input[type=radio]:checked + span:before
+  color: #fff
+  opacity: 1
+  transition: color .3s ease-out
+
+
+/**********************************************/
+
+.fl_cent
+  display: flex
+  flex-direction: column
+  align-items: center
+  position: relative
+  z-index: 4
+
+.cal_item
+  max-width: 270px
+  width: 100%
+
+.last_calc
+  z-index: 2
+
+
+/***********  PLAN OPEN **********/
+
+.s_flat_op
+  position: relative
+  margin-top: 50px
+  .back
+    position: absolute
+    right: 6%
+    top: -100px
+    a
+      @include alegBold()
+      display: flex
+      align-items: center
+      font-size: 24px
+      transition: all .3s ease
+      text-decoration: none
+      .fas
+        transition: all .3s ease
+        font-weight: 900
+        padding-right: 10px
+      &:hover
+        opacity: .4
+        .fas
+          padding-right: 20px
+
+.flat_op
+
+.flat_info
+  width: 100%
+  // margin-right: 120px
+  position: relative
+  .all_square
+    margin: 0 0 40px 0
+    h4
+      line-height: 1.4
+      font-size: 36px
+      @include alegBold()
+
+
+.table_inf
+  width: 55%
+  margin: 40px 0 20px 0
+  justify-content: space-between
+  display: flex
+  li
+    @include alegBold()
+    font-size: 18px
+    opacity: .8
+
+.action_bl
+  display: flex
+  align-items: center
+  .butt_sky
+    margin-right: 30px
+  .down_pl
+    font-size: 18px
+    text-decoration: none
+    position: relative
+    line-height: 1.3
+    transition: all .3s ease
+    &::after
+      transition: all .3s ease
+      position: absolute
+      content: ''
+      width: 84%
+      height: 1px
+      background-color: $blue
+      bottom: 0
+      right: 0
+    .fas
+      //transition: all .3s ease
+      padding-right: 14px
+    &:hover
+      color: rgba($blue, .4)
+      &::after
+        background-color: rgba($blue, .4)
+
+
+
+.flat_item
+  position: relative
+  z-index: 4
+  display: flex
+  justify-content: space-between
+  width: 100%
+  .img_bl
+    justify-content: center
+    display: flex
+    width: 85%
+    height: 464px
+    a
+      position: relative
+      &::after
+        width: 100%
+        height: 100%
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        background-color: rgba($blue, .4)
+        opacity: 0
+        transition: all .3s ease
+      &::before
+        content: "\f06e"
+        position: absolute
+        font-family: 'Font Awesome 5 Free'
+        font-size: 30px
+        z-index: 2
+        color: $accent
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%) scale(.5)
+        transition: all .3s ease
+        opacity: 0
+      &:hover
+        &::after
+          opacity: 1
+        &::before
+          opacity: 1
+          transform: translate(-50%, -50%) scale(1.8)
+    img
+      margin: auto
+      max-width: 100%
+      height: 100%
+      transition: all .5s ease
+      &:last-child
+        display: none
+  .view, .compas
+    width: 7%
+  .view
+    position: relative
+    left: -20px
+    margin-top: 20px
+    display: flex
+    flex-direction: column
+    li
+      transition: all .3s ease
+      @include alegBold()
+      cursor: pointer
+      font-size: 36px
+      line-height: 1.3
+      &.cur_view
+        opacity: .4
+      &:hover
+        transform: scale(1.2)
+  .compas
+    cursor: pointer
+    position: relative
+    right: -20px
+    img
+      transition: all .5s ease
+      width: 50px
+      height: auto
+      &:hover
+        transform: rotate(360deg)
+
+
+.s_view
+  margin-top: 80px
+  h2
+    font-size: 36px
+    margin-bottom: 50px
+  .slide
+    height: 400px
+    img
+      width: 100%
+      height: 100%
+  .slides_view
+    position: relative
+    .view_nav
+      position: absolute
+      top: -80px
+      right: 30px
+
+.page_plan
+  .main_foot
+    top: 70px
+  .s_help
+    margin-top: 100px
+
+
+/******** GALLERY PAGE **********/
+
+.s_gallery_all
+  margin-top: 80px
+
+.page_gal
+  .main_foot
+    top: 100px
+
+.gallery_items
+  margin-top: 50px
+  .it_block
+    margin-bottom: 30px
+    h4
+      margin: 10px 0 0 0
+      font-size: 24px
+      @include alegBold()
+  .gallery_item
+    cursor: pointer
+    position: relative
+    a:first-child
+      z-index: 2
+      position: relative
+      width: 100%
+      height: 290px
+      display: block
+      background-size: cover
+      background-position: center
+      position: relative
+
+.over_gal
+  display: block
+  z-index: 3
+  transition: all .3s ease
+  width: 100%
+  height: 100%
+  position: absolute
+  opacity: 0
+  background-color: rgba($blue, .6)
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  .far
+    transform: scale(0.5)
+    transition: all .3s ease
+    position: absolute
+    font-size: 40px
+    color: rgba($accent, .8)
+    top: 45%
+    left: 45%
+    transform: translateX(-50%, -50%)
+  &:hover
+    opacity: 1
+    .far
+      transform: scale(1)
+
+
+/***** FANCYBOX ******/
+
+.fancybox-button--left_new
+  background: #1e2021
+  top: 40%
+  left: 5%
+  width: 80px
+  height: 130px
+  position: absolute
+  z-index: 99999
+  font-size: 36px
+  outline: none
+  transition: all .3s ease
+
+.fancybox-container
+  button:focus
+    outline: none
+
+.fancybox-button--right_new
+  transition: all .3s ease
+  background: #1e2021
+  top: 40%
+  right: 5%
+  width: 80px
+  height: 130px
+  position: absolute
+  z-index: 99999
+  font-size: 36px
+  outline: none
+
+.fancybox-button--left_new:hover, .fancybox-button--right_new:hover
+  color: $accent
+  background: #1e2021
+
+.fancybox-controls--canzoomIn .fancybox-placeholder
+  margin: auto
+
+
+
+
+/*********  HOD STROYKI  **********/
+
+.s_all
+  margin-top: 20px
+
+.three_links
+  display: flex
+  font-size: 24px
+  @include alegBold()
+  align-items: center
+  position: relative
+  z-index: 2
+  margin: 0
+  .fas
+    padding-left: 10px
+  li
+    margin-left: 30px
+    transition: all .3s ease
+    &:hover
+      a
+        color: rgba($blue, .5)
+    &:first-child
+      margin-left: 15px
+    a
+      text-decoration: none
+      transition: all .3s ease
+
+.all_itm
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 100%
+  margin-top: 30px
+  .inf_bl
+    display: flex
+    width: 100%
+    margin-top: 15px
+  .img_bl
+    width: 100%
+    height: 432px
+    background-size: cover
+    background-position: center
+    position: relative
+    a
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+  .l_side
+    width: 20%
+    .date
+      font-size: 18px
+      color: rgba($blue, .5)
+    .soc
+      margin-top: 10px
+      .fab
+        font-size: 20px
+        transition: all .3s ease
+        &:hover
+          transform: scale(1.2)
+        &:first-child
+          margin-right: 10px
+  .head_txt
+    width: 80%
+    h5
+      font-size: 24px
+      line-height: 1.3
+      @include alegBold()
+    .text_new
+      font-size: 18px
+      line-height: 1.4
+  .butt_blue
+    margin-top: 30px
+    margin-bottom: 20px
+
+.nav_link
+  margin-top: 50px
+  display: flex
+  align-items: center
+  height: 26px
+  background-color: rgba(#c4c4c4, .5)
+  width: 125px
+  justify-content: space-between
+  background-color
+  .prev, .next
+    text-decoration: none
+    background-color: #cccc
+    padding: 3px 5px
+    font-size: 20px
+    display: flex
+    align-items: center
+  .counter
+    font-size: 20px
+    .curr_c
+    .all_count
+
+.all_page
+  .main_foot
+    top: 100px
+
+
+
+
+
+/*******************  MAGNIFIC POPUP  **********************/
+
+#popup_form1, #popup_form2, #popup_form3
+  width: calc(100% - 315px)
+  position: absolute
+  right: 0
+  color: #fff
+
+.mfp-close-btn-in
+  .call_bl, .call_soc
+    transition: all .3s ease
+    color: rgba($accent, .5)
+    font-size: 45px
+    right: 20px
+    top: 20px
+    &:hover
+      transform: scale(1.2)
+  .call_soc
+    color: darken($accent, 20%)
+    top: 10px
+    right: 10px
+
+
+
+.form_pop_call, .form_pop_soc
+  background-color: $blue
+  width: 80%
+  top: 50%
+  transform: translateY(-50%)
+  display: flex
+  margin: auto
+  flex-direction: column
+  align-items: center
+  position: relative
+  box-shadow: 0px 0px 25px rgba(20, 20, 20, 0.3)
+  color: #fff
+  padding: 30px 0
+  position: relative
+  z-index: 20
+
+
+  input[name=name], input[type=email], input[name=phone]
+    color: rgba(#fff, .4)
+  h4
+    font-size: 36px
+    @include alegBold()
+    margin-bottom: 20px
+  p
+    color: rgba(#fff, .4)
+    margin-top: 20px
+    margin-bottom: 15px
+
+  .but_form
+    margin-top: 10px
+    justify-content: space-between
+    .butt_sky
+      padding: 5px 13px
+
+  .radio span
+    border-color: #fff
+
+  .radio span:before
+    background-color: #fff
+
+  .radio input[type=radio]:checked+span
+    background-color: transparent
+
+
+.form_pop_soc
+  background-color: #fff
+  color: $blue
+  align-items: center
+  padding: 40px 20px
+  input[type=tel], input[name=name]
+    color: rgba($blue, .5)
+    border-bottom: 1px solid $blue
+    margin: 20px 0 40px
+  h4
+    text-align: center
+    max-width: 700px
+    line-height: 1.3
+  .but_form
+    flex-direction: column
+    align-items: center
+    .butt_blue
+      width: 240px
+    p
+      font-size: 18px
+      color: rgba($blue, .4)
+      margin: 0
+    .fab
+      position: relative
+      top: 1px
+      font-weight: 400
+      font-size: 20px
+      padding-left: 10px
+
+
+/************ OPEN NEWS ******************/
+
+.all_str
+  margin-top: 60px
+  position: relative
+  .back
+    position: absolute
+    right: 6%
+    top: -100px
+    a
+      @include alegBold()
+      display: flex
+      align-items: center
+      font-size: 24px
+      transition: all .3s ease
+      text-decoration: none
+      .fas
+        font-weight: 900
+        padding-right: 10px
+      &:hover
+        opacity: .4
+
+
+.new_wr
+  margin-bottom: 150px
+  .img_bl
+    width: 100%
+    img
+      max-width: 100%
+      width: 100%
+      height: 434px
+
+.all_same_wr
+  position: relative
+  h3
+    font-size: 36px
+    @include alegBold()
+    position: relative
+    left: 10px
+    margin: 0
+    bottom: -10px
+  .news_nav
+    position: absolute
+    top: 0
+    right: 0
+
+
+.new_mhead
+  width: 100%
+  display: flex
+  .l_s
+    position: relative
+    top: 8px
+    width: 15%
+    .date
+      font-size: 18px
+      color: rgba($blue, .5)
+    .soc
+      margin-top: 10px
+      .fab
+        font-size: 20px
+        transition: all .3s ease
+        &:hover
+          transform: scale(1.2)
+        &:first-child
+          margin-right: 10px
+
+  .r_side
+    width: 85%
+    h5
+      font-size: 36px
+      line-height: 1.2
+      @include alegBold()
+      margin-bottom: 20px
+    .text_new
+      font-size: 18px
+      line-height: 1.5
+
+.all_page_open
+  .main_foot
+    top: 100px
+
+
+.ass
+  text-transform: uppercase
+
+
+/*************  CONTACT PAGE  *******************/
+
+.s_cont_info
+  margin-top: 60px
+  position: relative
+  padding-bottom: 600px
+  margin-bottom: 60px
+  //&::after
+  //  content: ''
+  //  background-image: url('/wp-content/themes/wsf/assets/img/contacts/location.png')
+  //  position: absolute
+  //  background-size: cover
+  //  background-position: center
+  //  height: 500px
+  //  width: 100%
+  //  left: 50%
+  //  bottom: 0
+  //  transform: translateX(-50%)
+
+#map
+  width: 100%
+  height: 500px
+
+.map_wrap
+  position: absolute
+  width: 100%
+  bottom: 0
+  left: 50%
+  transform: translateX(-50%)
+
+.succes, .succes_foot
+  display: none
+  z-index: 22
+  position: absolute
+  width: 100%
+  height: 100%
+  background-color: $blue
+  .cont
+    text-align: center
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+  p
+    font-size: 18px
+
+
+.succes_foot
+  .cont
+    width: 200%
+  h4
+    font-size: 34px
+    color: #fff
+  p
+    color: rgba(#fff, .6)
+
+.succes_white
+  position: absolute
+  display: none
+  z-index: 22
+  width: 100%
+  height: 100%
+  background-color: #fff
+  .cont
+    text-align: center
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 22
+  p
+    font-size: 18px
+    color: rgba($blue, .7)
+
+.page_contacts
+  .main_foot
+    top: 100px
+
+.succes_help
+  position: absolute
+  display: none
+  z-index: 22
+  width: 100%
+  height: 100%
+  background-color: #f6f6f6
+  .cont
+    text-align: center
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 22
+  h4
+    font-size: 35px
+  p
+    font-size: 18px
+    color: rgba($blue, .7)
+
+
+
+.frst_inf, .scnd_inf
+  display: flex
+  flex-direction: column
+  h4
+    font-size: 36px
+    @include alegBold()
+    bottom: 35px
+  .tele, .mail
+    font-size: 24px
+    @include alegBold()
+
+.frst_inf
+  position: relative
+  &::after
+    content: ''
+    width: 2px
+    height: 120%
+    position: absolute
+    background-color: rgba(#c4c4c4, .4)
+    right: 25%
+    top: 50%
+    transform: translateY(-50%)
+  .tele
+    position: relative
+    margin: 20px 0 15px
+    padding-bottom: 10px
+    &::after
+      position: absolute
+      content: ''
+      width: 28px
+      height: 2px
+      background-color: rgba(#5C5970, .4)
+      bottom: 0
+      left: 0
+  .adr
+    margin-top: 10px
+    h5
+      margin: 0 0 10px 0
+      font-size: 24px
+      @include alegBold()
+    p
+      margin: 5px 0 0px 0
+      font-size: 18px
+      line-height: 1.4
+      span
+        @include alegBold()
+
+
+.scnd_inf
+  // padding-left: 80px
+  .tele
+    position: relative
+    margin: 20px 0 5px
+  .butt_blue
+    margin-top: 60px
+
+/*** 404 PAGE ***/
+
+// NOT FOUND PAGE
+
+.sect_notfound
+  height: 100vh
+  position: relative
+  &::after
+    content: '404'
+    font-size: 500px
+    color: rgba($blue, .1)
+    position: absolute
+    @include alegBold()
+    z-index: 1
+    display: block
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+  h1
+    position: relative
+    z-index: 2
+    color: $blue
+    font-size: 56px
+  .fas
+    font-size: 40px
+    color: $accent
+    position: relative
+    animation: look 15s linear infinite
+    z-index: 4
+
+  p
+    font-size: 24px
+    position: relative
+    z-index: 3
+  .link
+    display: flex
+    flex-direction: column
+    a
+      color: $accent
+      @include alegBold()
+      // animation: not_found 1s linear infinite
+      font-size: 26px
+      transition: all .7s ease
+      -moz-transform: scale(2)
+      position: relative
+      &:hover
+        text-transform: uppercase
+        text-decoration: none
+        letter-spacing: 3px
+        text-shadow: -1px 0 0px rgba($blue, .7), 0 1px 0px rgba($blue, .7), -2px 1px 0px #ccc, -1px 2px 0px #ccc, -3px 2px 0px #ccc, -2px 3px 0px #ccc, -4px 3px 0px #ccc, -3px 4px 0px #ccc, -5px 4px 0px #ccc, -4px 5px 0px #ccc, -6px 5px 0px #ccc, -5px 6px 15px #777
+
+.text_wr
+  text-align: center
+
+.my-mfp-zoom-in .zoom-anim-dialog
+  opacity: 0
+
+  -webkit-transition: all 0.2s ease-in-out
+  -moz-transition: all 0.2s ease-in-out
+  -o-transition: all 0.2s ease-in-out
+  transition: all 0.2s ease-in-out
+
+
+
+  -webkit-transform: scale(0.8)
+  -moz-transform: scale(0.8)
+  -ms-transform: scale(0.8)
+  -o-transform: scale(0.8)
+  transform: scale(0.8)
+
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog
+  opacity: 1
+
+  -webkit-transform: scale(1)
+  -moz-transform: scale(1)
+  -ms-transform: scale(1)
+  -o-transform: scale(1)
+  transform: scale(1)
+
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog
+  -webkit-transform: scale(0.8)
+  -moz-transform: scale(0.8)
+  -ms-transform: scale(0.8)
+  -o-transform: scale(0.8)
+  transform: scale(0.8)
+
+  opacity: 0
+
+
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg
+  opacity: 0
+  -webkit-transition: opacity 0.3s ease-out
+  -moz-transition: opacity 0.3s ease-out
+  -o-transition: opacity 0.3s ease-out
+  transition: opacity 0.3s ease-out
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg
+  opacity: 0.8
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg
+  opacity: 0
+
+
+
+
+
+
+
+
+
+
+
+/** ANIMATION **/
+
+@keyframes mouse
+  0%
+    bottom: 60px
+  50%
+    bottom: 30px
+  100%
+    bottom: 60px
+
+@keyframes move_decor
+  0%
+    left: -90px
+  100%
+    left: -1000px
+
+
+/** MASK INVALID **/
+.incomplete
+  animation: invalid 1s linear infinite
+  -webkit-animation: invalid 1s linear infinite
+  -moz-animation: invalid 1s linear infinite
+  -o-animation: invalid 1s linear infinite
+
+
+@-webkit-keyframes invalid
+  0%
+    border: 2px solid #FFF
+  50%
+    border: 2px solid red
+  100%
+    border: 2px solid #FFF
+
+@keyframes invalid
+  0%
+    border: 2px solid #FFF
+  50%
+    border: 2px solid red
+  100%
+    border: 2px solid #FFF
+
+@keyframes look
+  0%
+    top: -20px
+    left: -40px
+  5%
+    top: -50px
+    left: -50px
+  10%
+    top: -80px
+    left: -100px
+    color: rgba($blue, .5)
+  15%
+    top: -120px
+    left: -240px
+  25%
+    top: -150px
+    left: -300px
+    transform: scale(2)
+  30%
+    top: -150px
+    left: -300px
+    transform: scale(1)
+    color: rgba($accent, .7)
+  35%
+    top: -100px
+    left: -200px
+  45%
+    top: -50px
+    left: -50px
+  55%
+    top: 0px
+    left: -80px
+    color: rgba($blue, .3)
+  60%
+    left: 0
+    top: 0
+    transform: scale(2)
+  63%
+    left: 0
+    top: 0
+    transform: scale(1)
+  67%
+    left: 50px
+    top: -50px
+    color: rgba($accent, .3)
+  70%
+    left: 100px
+    top: -80px
+  75%
+    left: 200px
+    top: -50px
+    color: rgba($accent, .8)
+  80%
+    left: 300px
+    top: -150px
+  85%
+    top: -100px
+    left: 100px
+    transform: scale(2)
+  88%
+    top: 0px
+    left: 30px
+    color: rgba($blue, .8)
+  90%
+    top: 130px
+    left: 200px
+    transform: scale(1)
+  92%
+    top: 80px
+    left: 150px
+  96%
+    color: rgba($accent, .7)
+    top: 20px
+    left: 50px
+  98%
+    top: 0px
+    left: -20px
+    transform: scale(2)
+  100%
+    color: rgba($accent, 1)
+    top: -20px
+    left: -40px
+    transform: scale(1)
+
+
+
+#loaderSvgWrapper
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: #0C1429
+  z-index: 999999999999
+
+#preLoader
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+  path
+    fill: #EEC880
+    stroke: #EEC880
+
+#T1
+  animation: visible 2s ease .2s infinite
+
+#T2
+  animation: visible 2s ease .4s infinite
+
+#T3
+  animation: visible 2s ease .6s infinite
+
+#T4
+  animation: visible 2s ease .8s infinite
+
+#T5
+  animation: visible 2s ease 1s infinite
+
+#T6
+  animation: visible 2s ease 1.2s infinite
+
+@keyframes visible
+  0%
+    opacity: 1
+    stroke-opacity: 1
+
+  50%
+    opacity: 0
+    stroke-opacity: 0
+
+  100%
+    opacity: 1
+    stroke-opacity: 1
+
+
+
+@import "media" // Always at the end

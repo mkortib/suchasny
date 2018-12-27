@@ -1,0 +1,599 @@
+# Translation of Plugins - Loco Translate - Stable (latest release) in Finnish
+# This file is distributed under the same license as the Plugins - Loco Translate - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-07-15 15:59:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: fi\n"
+"Project-Id-Version: Plugins - Loco Translate - Stable (latest release)\n"
+
+#. Author URI of the plugin/theme
+msgid "https://localise.biz/help/wordpress/translate-plugin"
+msgstr "https://localise.biz/help/wordpress/translate-plugin"
+
+#. Author of the plugin/theme
+msgid "Tim Whitlock"
+msgstr "Tim Whitlock"
+
+#. Description of the plugin/theme
+msgid "Translate WordPress plugins and themes directly in your browser"
+msgstr "Käännä WordPressin lisäosia ja teemoja suoraan selaimessasi."
+
+#. Plugin URI of the plugin/theme
+msgid "http://wordpress.org/extend/plugins/loco-translate"
+msgstr "http://wordpress.org/extend/plugins/loco-translate"
+
+#: tpl/admin-root.tpl.php:74
+msgctxt "Package list header"
+msgid "Core"
+msgstr "Ydin"
+
+#: tpl/admin-root.tpl.php:61
+msgctxt "Package list header"
+msgid "Plugins"
+msgstr "Lisäosat"
+
+#: tpl/admin-root.tpl.php:48
+msgctxt "Package list header"
+msgid "Themes"
+msgstr "Teemat"
+
+#: tpl/admin-root.tpl.php:39
+msgid "Select a plugin or theme to translate"
+msgstr "Valitse käännettävä lisäosa tai teema."
+
+#: tpl/admin-root.tpl.php:21
+msgid "Upgrade to version %s of Loco Translate"
+msgstr "Päivitä Loco Translate versioon %s."
+
+#: tpl/admin-root.tpl.php:18
+msgid "New version available"
+msgstr "Uusi versio saatavilla"
+
+#: tpl/admin-poinit.tpl.php:71
+msgctxt "Submit button"
+msgid "Start translating"
+msgstr "Aloita kääntäminen"
+
+#: tpl/admin-poinit.tpl.php:64
+msgctxt "Form label"
+msgid "create in global languages directory"
+msgstr "Luo globaaliin kielihakemistoon"
+
+#: tpl/admin-poinit.tpl.php:47
+msgctxt "Form label"
+msgid "or enter any language code"
+msgstr "tai anna kielikoodi"
+
+#: tpl/admin-poinit.tpl.php:35
+msgid "Select from common languages"
+msgstr "Valitse kieli"
+
+#: tpl/admin-poinit.tpl.php:22
+msgid "Initialize new translations in %s"
+msgstr "Aseta käännöksen perustiedot: %s"
+
+#: tpl/admin-poedit.tpl.php:145
+msgctxt "Editor button"
+msgid "Help"
+msgstr "Ohje"
+
+#: tpl/admin-poedit.tpl.php:140
+msgid "Filter translations"
+msgstr "Etsi käännöksiä"
+
+#: tpl/admin-poedit.tpl.php:135
+msgctxt "Editor button"
+msgid "Fuzzy"
+msgstr "Epäselvä"
+
+#: tpl/admin-poedit.tpl.php:130
+msgctxt "Editor button"
+msgid "Del"
+msgstr "Poista"
+
+#: tpl/admin-poedit.tpl.php:125
+msgctxt "Editor button"
+msgid "Add"
+msgstr "Lisää"
+
+#: tpl/admin-poedit.tpl.php:120
+msgctxt "Editor button"
+msgid "Revert"
+msgstr "Palaa edelliseen"
+
+#: tpl/admin-poedit.tpl.php:115
+msgctxt "Editor button"
+msgid "Sync"
+msgstr "Synkronoi"
+
+#: tpl/admin-poedit.tpl.php:94 tpl/admin-poedit.tpl.php:103
+msgctxt "Editor button"
+msgid "Download"
+msgstr "Lataa"
+
+#: tpl/admin-poedit.tpl.php:87
+msgctxt "Editor button"
+msgid "Save"
+msgstr "Tallenna"
+
+#: tpl/admin-poedit.tpl.php:62
+msgid "never"
+msgstr "ei koskaan"
+
+#: tpl/admin-poedit.tpl.php:40
+msgctxt "Dropdown label"
+msgid "Switch to..."
+msgstr "Vaihda..."
+
+#: tpl/admin-poedit.tpl.php:32
+msgid "Template file"
+msgstr "Mallitiedosto"
+
+#: tpl/admin-opts.tpl.php:101
+msgid "Save settings"
+msgstr "Tallenna asetukset"
+
+#: tpl/admin-opts.tpl.php:92
+msgid "Enable WordPress core translations"
+msgstr "Ota käyttöön WordPressin ytimen kielikäännökset."
+
+#: tpl/admin-opts.tpl.php:83 tpl/admin-opts.tpl.php:87
+msgid "Experimental features"
+msgstr "Koeluontoiset ominaisuudet"
+
+#: tpl/admin-opts.tpl.php:75
+msgid "Number of backups to keep of each file:"
+msgstr "Kunkin tiedoston varmuuskopioiden lukumäärä:"
+
+#: tpl/admin-opts.tpl.php:67 tpl/admin-opts.tpl.php:71
+msgid "Backing up PO files"
+msgstr "PO-tiedostojen varmuuskopiointi"
+
+#: tpl/admin-opts.tpl.php:60
+msgid "Include Fuzzy strings"
+msgstr "Ota mukaan epäselvät merkkijonot."
+
+#: tpl/admin-opts.tpl.php:54
+msgid "Generate hash tables"
+msgstr "Luo hajautustaulut (hash tables)."
+
+#: tpl/admin-opts.tpl.php:47
+msgid "Enter path to msgfmt on server"
+msgstr "Anna palvelimen msgfmt-polku"
+
+#: tpl/admin-opts.tpl.php:42
+msgid "Use external command:"
+msgstr "Käytä ulkoista kääntäjäkomentoa:"
+
+#: tpl/admin-opts.tpl.php:36
+msgid "Use built-in MO compiler."
+msgstr "Käytä sisäänrakennettua MO-valmistajaa."
+
+#: tpl/admin-opts.tpl.php:27 tpl/admin-opts.tpl.php:31
+msgid "Compiling MO files"
+msgstr "MO-tiedostojen kvalmistaminen"
+
+#: tpl/admin-opts.tpl.php:18
+msgid "Configure Loco Translate"
+msgstr "Loco Translate - käännösasetukset"
+
+#: tpl/admin-nav.tpl.php:32
+msgid "Loco may not work as expected"
+msgstr "Loco saattaa toimia poikkeavasti"
+
+#: tpl/admin-nav.tpl.php:26
+msgid "Powered by"
+msgstr "Voimanlähteenä"
+
+#: tpl/admin-list.tpl.php:49 tpl/admin-poedit.tpl.php:57
+msgctxt "Modified time"
+msgid "Updated"
+msgstr "Päivitetty"
+
+#: tpl/admin-list.tpl.php:44
+msgid "1 language"
+msgid_plural "%u languages"
+msgstr[0] "1 kieli"
+msgstr[1] "%u kieltä"
+
+#: tpl/admin-list.tpl.php:40
+msgid "Extends: %s"
+msgstr "%s-laajennos"
+
+#: tpl/admin-list.tpl.php:20
+msgctxt "Table header"
+msgid "File permissions"
+msgstr "Käyttöoikeudet"
+
+#: tpl/admin-list.tpl.php:17
+msgctxt "Table header"
+msgid "Template (POT)"
+msgstr "Mallitiedosto (POT)"
+
+#: tpl/admin-list.tpl.php:14
+msgctxt "Table header"
+msgid "Translations (PO)"
+msgstr "Käännökset (PO)"
+
+#: tpl/admin-list.tpl.php:11
+msgctxt "Table header"
+msgid "Package details"
+msgstr "Paketin tiedot"
+
+#: tpl/admin-fscheck.tpl.php:58 tpl/admin-opts.tpl.php:102
+msgid "Get help"
+msgstr "Ohjeet"
+
+#: tpl/admin-fscheck.tpl.php:57
+msgid "Back"
+msgstr "Takaisin"
+
+#: tpl/admin-fscheck.tpl.php:43
+msgid "Other potential issues with %s"
+msgstr "%s:n muut mahdolliset ongelmat"
+
+#: tpl/admin-fscheck.tpl.php:19
+msgid "File system permissions for %s"
+msgstr "%s:n tiedostonkäyttöoikeudet"
+
+#: tpl/admin-fscheck.tpl.php:10
+msgid "File check"
+msgstr "Tiedostotarkistus"
+
+#: tpl/admin-fscheck.tpl.php:7 tpl/admin-opts.tpl.php:6
+#: tpl/admin-poedit.tpl.php:6 tpl/admin-poinit.tpl.php:6
+#: tpl/admin-root.tpl.php:6
+msgid "Packages"
+msgstr "Paketit"
+
+#: pub/js/lang/dummy.php:58 tpl/admin-poinit.tpl.php:59
+msgctxt "Form label"
+msgid "create in <code>%s</code>"
+msgstr "Luo hakemistoon <code>%s</code>"
+
+#: pub/js/lang/dummy.php:56
+msgid "No strings could be extracted from source files"
+msgstr "Merkkijonoja ei saatu poimittua lähdetiedostoista"
+
+#: pub/js/lang/dummy.php:54
+msgid "No source files in this package, nothing to sync"
+msgstr "Ei lähdetiedostoja tässä paketissa, ei mitään synkronoitavaa"
+
+#: pub/js/lang/dummy.php:52
+msgid "Translation"
+msgstr "Käännös"
+
+#: pub/js/lang/dummy.php:44
+msgctxt "Editor pane"
+msgid "Context"
+msgstr "Asiayhteys"
+
+#: pub/js/lang/dummy.php:41
+msgctxt "Editor pane"
+msgid "Comments"
+msgstr "Kommentit"
+
+#: pub/js/lang/dummy.php:38
+msgctxt "Editor pane"
+msgid "%s translation"
+msgstr "Käännösteksti (kieli: %s)"
+
+#: pub/js/lang/dummy.php:35
+msgctxt "Editor pane"
+msgid "Source text"
+msgstr "Lähdeteksti"
+
+#: pub/js/lang/dummy.php:27
+msgid "Your changes will be lost if you continue without saving"
+msgstr "Menetät tekemäsi muutokset, jos jatkat tallentamatta."
+
+#: pub/js/lang/dummy.php:25
+msgid "1 obsolete string removed"
+msgid_plural "%s obsolete strings removed"
+msgstr[0] "1 vanhentunut merkkijono poistettu"
+msgstr[1] "%s vanhentunutta merkkijonoa poistettu"
+
+#: pub/js/lang/dummy.php:23
+msgid "1 new string added"
+msgid_plural "%s new strings added"
+msgstr[0] "1 uusi merkkijono lisätty"
+msgstr[1] "%s uutta merkkijonoa lisätty"
+
+#: pub/js/lang/dummy.php:21
+msgid "Already up to date with source code"
+msgstr "Jo ajan tasalla lähdekoodin kanssa."
+
+#: pub/js/lang/dummy.php:19
+msgid "Already up to date with %s"
+msgstr "Jo ajan tasalla %s:n kanssa."
+
+#: pub/js/lang/dummy.php:17
+msgid "Merged from source code"
+msgstr "Yhdistetty lähdekoodista"
+
+#. Translators: where %s is the path to a POT file
+#: pub/js/lang/dummy.php:15
+msgid "Merged from %s"
+msgstr "Yhdistetty kohteesta %s"
+
+#: pub/js/lang/dummy.php:12
+msgid "and MO file compiled"
+msgstr "ja MO-tiedosto valmistettu"
+
+#: pub/js/lang/dummy.php:10
+msgid "PO file saved"
+msgstr "PO-tiedosto tallennettu"
+
+#: pub/js/lang/dummy.php:8
+msgid "Unknown error"
+msgstr "Tuntematon virhe"
+
+#: php/loco-posave.php:131
+msgid "Failed to write MO file"
+msgstr "MO-tiedostoon kirjoittaminen epäonnistui"
+
+#: php/loco-posave.php:105
+msgid "Cannot overwrite MO file"
+msgstr "MO-tiedostoa ei voi ylikirjoittaa"
+
+#: php/loco-posave.php:102
+msgid "Cannot create MO file"
+msgstr "MO-tiedostoa ei voi luoda"
+
+#: php/loco-posave.php:81
+msgid "%s file is not writable by the web server. Fix file permissions or download and copy to \"%s/%s\"."
+msgstr "Verkkopalvelin ei pysty kirjoittamaan tiedostoon %s. Korjaa käyttöoikeusasetukset tai lataa tiedosto ja kopioi se kohteeseen \"%s/%s\"."
+
+#: php/loco-posave.php:69
+msgid "Web server cannot create files in the \"%s\" directory. Fix file permissions or use the download function."
+msgstr "Verkkopalvelin ei pysty luomaan tiedostoja hakemistoon \"%s\". Korjaa käyttöoikeusasetukset tai käytä lataustoimintoa."
+
+#: php/loco-posave.php:66
+msgid "Web server cannot create \"%s\" directory in \"%s\". Fix file permissions or create it manually."
+msgstr "Verkkopalvelin ei pysty luomaan hakemistoa \"%s\" kohteeseen \"%s\". Korjaa käyttöoikeusasetukset tai luo hakemisto käsin."
+
+#: php/loco-posave.php:58
+msgid "Web server cannot create backups in \"%s\". Fix file permissions or disable backups in settings"
+msgstr "Verkkopalvelin ei pysty tekemään varmuuskopioita kohteeseen \"%s\". Korjaa käyttöoikeusasetukset tai poista varmuuskopiointi käytöstä käännösasetuksista"
+
+#: php/loco-posave.php:23 php/loco-posync.php:22
+msgid "Package not found called %s"
+msgstr "%s-pakettia ei löytynyt"
+
+#: php/loco-download.php:75 php/loco-posave.php:121
+msgid "Failed to compile MO file with %s, check your settings"
+msgstr "MO-tiedoston valmistaminen epäonnistui (kääntäjänä %s). Tarkista käännösasetukset."
+
+#: php/loco-data.php:21 php/loco-posave.php:10 php/loco-posync.php:9
+msgid "Invalid data posted to server"
+msgstr "Palvelimelle lähetettiin virheellistä dataa"
+
+#: php/loco-ajax.php:17 php/loco-download.php:21
+msgid "User does not have permission to manage translations"
+msgstr "Käyttäjällä ei ole oikeuksia käännösten hallinnointiin."
+
+#: lib/loco-packages.php:559
+msgid "%s has a strange POT file name (%s). A better name would be \"%s.pot\""
+msgstr "%s:n POT-tiedoston nimi on erikoinen (%s). Parempi nimi olisi \"%s.pot\""
+
+#: lib/loco-packages.php:556
+msgid "%s has no POT file. Create one at \"%s/%s.pot\" if you need one."
+msgstr "Kohteessa %s ei ole POT-tiedostoa. Jos tarvitset tiedostoa, luo se kohteeseen \"%s/%s.pot\"."
+
+#: lib/loco-packages.php:551
+msgid "%s does not declare a \"Domain Path\""
+msgstr "%s ei sisällä \"Domain Path\"-määrittelyä (toimialueen polkua)"
+
+#: lib/loco-packages.php:546 lib/loco-packages.php:551
+msgid "Loco has guessed \"%s\""
+msgstr "Locon arvaus on \"%s\""
+
+#: lib/loco-packages.php:546
+msgid "%s does not declare a \"Text Domain\""
+msgstr "%s ei sisällä \"Text Domain\"-määrittelyä (-toimialuetta)"
+
+#: lib/loco-packages.php:527
+msgid "Folder not found"
+msgstr "Kansiota ei löydy"
+
+#: lib/loco-packages.php:527
+msgid "Folder not writable"
+msgstr "Ei kirjoitusoikeutta kansioon"
+
+#: lib/loco-packages.php:522
+msgid "MO file not found"
+msgstr "MO-tiedostoa ei löydy"
+
+#: lib/loco-packages.php:522
+msgid "MO file not writable"
+msgstr "Ei kirjoitusoikeutta MO-tiedostoon"
+
+#: lib/loco-packages.php:520
+msgid "PO file not writable"
+msgstr "Ei kirjoitusoikeutta PO-tiedostoon"
+
+#: lib/loco-packages.php:515
+msgid "POT file not writable"
+msgstr "Ei kirjoitusoikeutta POT-tiedostoon"
+
+#: lib/loco-packages.php:490 lib/loco-packages.php:494
+msgid "\"%s\" folder not writable"
+msgstr "\"%s\"-kansioon ei kirjoitusoikeutta"
+
+#: lib/loco-packages.php:484
+msgid "Some files missing"
+msgstr "Joitakin puuttuvia tiedostoja"
+
+#: lib/loco-packages.php:474 lib/loco-packages.php:481
+msgid "Some files not writable"
+msgstr "Ei kirjoitusoikeutta joihinkin tiedostoihin"
+
+#: lib/loco-locales.php:77
+msgid "Unknown language"
+msgstr "Tuntematon kieli"
+
+#: lib/loco-admin.php:1159
+msgid "WPLANG is deprecated and should be removed from wp-config.php"
+msgstr "WPLANG on vanhentunut, ja se pitäisi poistaa wp-config.php-tiedostosta."
+
+#: lib/loco-admin.php:1149
+msgid "File download failed"
+msgstr "Tiedoston lataaminen epäonnistui."
+
+#: lib/loco-admin.php:1125 tpl/admin-fscheck.tpl.php:8 tpl/admin-opts.tpl.php:7
+#: tpl/admin-poedit.tpl.php:7 tpl/admin-poinit.tpl.php:7
+#: tpl/admin-root.tpl.php:7
+msgid "Settings"
+msgstr "Asetukset"
+
+#. #-#-#-#-#  tmp-loco-translate.pot (Loco Translate 1.5.6)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: lib/loco-admin.php:1101
+msgid "Loco Translate"
+msgstr "Loco Translate"
+
+#: lib/loco-admin.php:1094
+msgid "Translation options"
+msgstr "Asetukset"
+
+#: lib/loco-admin.php:1093 lib/loco-admin.php:1124
+msgid "Manage translations"
+msgstr "Käännökset"
+
+#: lib/loco-admin.php:1092 tpl/admin-nav.tpl.php:27
+msgid "Loco, Translation Management"
+msgstr "Loco, Translation Management"
+
+#: lib/loco-admin.php:1044
+msgid "Failed to compile MO file with built-in compiler"
+msgstr "MO-tiedostoa ei saatu valmistettua sisäänrakennetulla kääntäjällä."
+
+#: lib/loco-admin.php:998
+msgid "%s untranslated"
+msgstr "%s kääntämättä"
+
+#: lib/loco-admin.php:995
+msgid "%s fuzzy"
+msgstr "%s epäselvää"
+
+#: lib/loco-admin.php:992
+msgid "1 string"
+msgid_plural "%s strings"
+msgstr[0] "1 merkkijono"
+msgstr[1] "%s merkkijonoa"
+
+#: lib/loco-admin.php:992
+msgid "%s%% translated"
+msgstr "%s%% käännetty"
+
+#: lib/loco-admin.php:953
+msgctxt "Add button"
+msgid "New language"
+msgstr "Uusi kieli"
+
+#: lib/loco-admin.php:934
+msgctxt "Add button"
+msgid "New template"
+msgstr "Uusi mallitiedosto"
+
+#: lib/loco-admin.php:787
+msgid "%s file has no header"
+msgstr "%s-tiedostossa ei ole otsikkoa."
+
+#: lib/loco-admin.php:783
+msgid "Empty or invalid %s file"
+msgstr "Tyhjä tai virheellinen %s-tiedosto."
+
+#: lib/loco-admin.php:536
+msgid "Bad file path"
+msgstr "Virheellinen tiedostopolku."
+
+#: lib/loco-admin.php:440
+msgid "POT has been modified since PO file was saved, run Sync to update"
+msgstr "POT-tiedostoa on muokattu PO-tiedoston tallentamisen jälkeen. Käynnistä synkronointi päivittääksesi tiedot."
+
+#: lib/loco-admin.php:436
+msgid "Source code has been modified, run Sync to update POT"
+msgstr "Lähdekoodia on muutettu. Käynnistä synkronointi päivittääksesi POT-tiedoston."
+
+#: lib/loco-admin.php:417
+msgid "Run Sync to update from %s"
+msgstr "Käynnistä synkronointi päivittääksesi tiedot %s:sta."
+
+#: lib/loco-admin.php:410 php/loco-posync.php:52
+msgid "No strings could be extracted from source code"
+msgstr "Käännettäviä tekstejä ei saadda poimittua lähdekoodista."
+
+#: lib/loco-admin.php:406 lib/loco-admin.php:421
+msgid "Run Sync to update from source code"
+msgstr "Käynnistä synkronointi päivittääksesi tiedot lähdekoodista."
+
+#: lib/loco-admin.php:405 lib/loco-admin.php:414
+msgid "%s file is empty"
+msgstr "%s-tiedosto on tyhjä."
+
+#: lib/loco-admin.php:396
+msgid "File cannot be created automatically. Fix the file permissions or use Download instead of Save"
+msgstr "Tiedostoa ei voi luoda automaattisesti. Korjaa tiedoston käyttöoikeusasetukset tai lataa tiedosto koneellesi tallentamisen sijasta."
+
+#: lib/loco-admin.php:344
+msgid "PO file already exists with locale %s"
+msgstr "PO-tiedosto on jo olemassa kielellä %s."
+
+#: lib/loco-admin.php:337
+msgid "Cannot create a PO file."
+msgstr "PO-tiedostoa ei voi luoda."
+
+#: lib/loco-admin.php:337 lib/loco-admin.php:426
+msgid "No translatable strings found"
+msgstr "Käännettävää ei löytynyt."
+
+#: lib/loco-admin.php:312
+msgid "You must specify a valid locale for a new PO file"
+msgstr "Sinun on valittava uudelle PO-tiedostolle käypä kielitunnus."
+
+#: lib/loco-admin.php:214
+msgid "PO file used as template. This will be renamed to %s on first save"
+msgstr "PO-tiedosto, jota käytetään mallitiedostona. Tämä nimetään uudelleen %s:ksi ensimmäisen tallennuksen yhteydessä."
+
+#: lib/loco-admin.php:199
+msgid "New PO file"
+msgstr "Uusi PO-tiedosto"
+
+#: lib/loco-admin.php:126 lib/loco-packages.php:568
+msgid "%s is not an official WordPress language"
+msgstr "%s ei ole virallinen WordPress-kieli"
+
+#: lib/loco-admin.php:86
+msgid "Settings saved"
+msgstr "Asetukset tallennettu"
+
+#: lib/loco-admin.php:63
+msgid "Permission denied"
+msgstr "Lupa evätty"
+
+#: lib/loco-admin.php:54 tpl/admin-list.tpl.php:98
+msgctxt "Message label"
+msgid "OK"
+msgstr "OK"
+
+#: lib/loco-admin.php:41
+msgctxt "Message label"
+msgid "Warning"
+msgstr "Varoitus"
+
+#. Translators: Bold text label in admin error messages
+#: lib/loco-admin.php:31
+msgctxt "Message label"
+msgid "Error"
+msgstr "Virhe"
+
+#: lib/compat/loco-iconv.php:13 lib/compat/loco-json.php:13
+#: lib/compat/loco-mbstring.php:13 lib/compat/loco-tokenizer.php:12
+msgid "PHP extension \"%s\" is not installed. If you experience problems you should install it"
+msgstr "PHP-laajennusta \"%s\" ei ole asennettu. Jos ongelmia esiintyy, sinun on asennettava se."

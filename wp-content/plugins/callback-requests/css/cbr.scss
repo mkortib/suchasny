@@ -1,0 +1,32 @@
+h1 {
+  margin: 70px auto 30px;
+}
+
+.cbr__table{
+  table-layout: fixed;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+
+  th {
+    background: #000;
+    color: #ffffff;
+  }
+
+  tr {
+    line-height: 30px;
+
+    &:nth-child(odd){
+      background: #fff;
+    }
+  }
+
+  td {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+}

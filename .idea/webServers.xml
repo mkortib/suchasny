@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1f7b539c-8201-4212-81a1-dc784c9a8eb5" name="skvartal.com.ua" url="http://skvartal.com.ua">
+        <fileTransfer host="skvartal.com.ua" port="21" rootFolder="/www/skvartal.com.ua">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,196 @@
+# Translation of Plugins - WP-PageNavi - Stable (latest release) in Greek
+# This file is distributed under the same license as the Plugins - WP-PageNavi - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-09-20 11:19:54+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: el_GR\n"
+"Project-Id-Version: Plugins - WP-PageNavi - Stable (latest release)\n"
+
+#: core.php:128 core.php:147 core.php:159
+msgid "Page %s"
+msgstr "Σελίδα %d"
+
+#. Author URI of the plugin/theme
+msgid "https://lesterchan.net"
+msgstr "https://lesterchan.net"
+
+#. Author of the plugin/theme
+msgid "Lester 'GaMerZ' Chan"
+msgstr "Lester 'GaMerZ' Chan"
+
+#. Description of the plugin/theme
+msgid "Adds a more advanced paging navigation to your WordPress blog"
+msgstr "Προσθέτει μία πιο εξελιγμένη πλοήγηση με σελίδες για το WordPress ιστολόγιό σας"
+
+#. Plugin URI of the plugin/theme
+msgid "https://lesterchan.net/portfolio/programming/php/"
+msgstr "https://lesterchan.net/portfolio/programming/php/"
+
+#. Plugin Name of the plugin/theme
+msgid "WP-PageNavi"
+msgstr "WP-PageNavi"
+
+#: wp-pagenavi.php:27 wp-pagenavi.php:28
+msgid "..."
+msgstr "..."
+
+#: wp-pagenavi.php:26
+msgid "&raquo;"
+msgstr "&raquo;"
+
+#: wp-pagenavi.php:25
+msgid "&laquo;"
+msgstr "&laquo;"
+
+#: wp-pagenavi.php:24
+msgid "Last &raquo;"
+msgstr "Τελευταία &raquo;"
+
+#: wp-pagenavi.php:23
+msgid "&laquo; First"
+msgstr "&laquo; Πρώτη"
+
+#: wp-pagenavi.php:20
+msgid "Page %CURRENT_PAGE% of %TOTAL_PAGES%"
+msgstr "Σελίδα %CURRENT_PAGE% από %TOTAL_PAGES%"
+
+#: scb/AdminPage.php:516
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
+#: scb/AdminPage.php:259
+msgid "Settings <strong>saved</strong>."
+msgstr "Οι ρυθμίσεις <strong>αποθηκεύτηκαν</strong>."
+
+#: admin.php:158
+msgid "Page Navigation Options"
+msgstr "Επιλογές Πλοήγησης Σελίδων"
+
+#: admin.php:153
+msgid "For example, if mutiple is 5, it will show: 5, 10, 15, 20, 25"
+msgstr "Για παράδειγμα, αν το πολλαπλάσιο είναι 5, θα εμφανίσει: 5, 10, 15, 20, 25"
+
+#: admin.php:148
+msgid "Show Larger Page Numbers In Multiples Of"
+msgstr "Εμφάνιση των Μεγαλύτερων Αριθμών Σελίδας Σε Πολλαπλάσια Του"
+
+#: admin.php:144
+msgid "Enter 0 to disable."
+msgstr "Εισάγετε 0 για απενεργοποίηση."
+
+#: admin.php:143
+msgid "For example, WP-PageNavi will display: Pages 1, 2, 3, 4, 5, 10, 20, 30, 40, 50."
+msgstr "Για παράδειγμα, το WP-PageNavi θα εμφανίσει: Σελίδες 1, 2, 3, 4, 5, 10, 20, 30, 40, 50."
+
+#: admin.php:142
+msgid "Larger page numbers are in addition to the normal page numbers. They are useful when there are many pages of posts."
+msgstr "Οι μεγαλύτεροι αριθμοί σελίδας εμφανίζονται επιπρόσθετα των κανονικών αριθμών σελίδας. Είναι χρήσιμοι όταν υπάρχουν πολλές σελίδες άρθρων."
+
+#: admin.php:137
+msgid "Number Of Larger Page Numbers To Show"
+msgstr "Αριθμός Των Μεγαλύτερων Αριθμών Σελίδας Προς Εμφάνιση"
+
+#: admin.php:130
+msgid "Number Of Pages To Show"
+msgstr "Αριθμός Σελίδων Προς Εμφάνιση"
+
+#: admin.php:126
+msgid "Show navigation even if there's only one page."
+msgstr "Εμφάνιση της πλοήγησης ακόμη και αν υπάρχει μόνο μία σελίδα."
+
+#: admin.php:122
+msgid "Always Show Page Navigation"
+msgstr "Μόνιμη Εμφάνιση της Πλοήγησης Σελίδων"
+
+#: admin.php:117
+msgid "Drop-down List"
+msgstr "Πτυσσόμενη Λίστα"
+
+#: admin.php:117
+msgid "Normal"
+msgstr "Κανονικό"
+
+#: admin.php:114
+msgid "Page Navigation Style"
+msgstr "Στυλ Πλοήγησης Σελίδων"
+
+#: admin.php:110 admin.php:125
+msgid "No"
+msgstr "Όχι"
+
+#: admin.php:110 admin.php:125
+msgid "Yes"
+msgstr "Ναι"
+
+#: admin.php:107
+msgid "Use pagenavi-css.css"
+msgstr "Χρησιμοποιήστε το pagenavi-css.css"
+
+#: admin.php:101
+msgid "Leaving a field blank will hide that part of the navigation."
+msgstr "Αφήνοντας ένα πεδίο κενό θα αποκρύψετε αυτό το κομμάτι της πλοήγησης."
+
+#: admin.php:100
+msgid "Page Navigation Text"
+msgstr "Κείμενο Πλοήγησης Σελίδων"
+
+#: admin.php:93
+msgid "Text For Next ..."
+msgstr "Κείμενο Επόμενου ..."
+
+#: admin.php:87
+msgid "Text For Previous ..."
+msgstr "Κείμενο Προηγούμενου ..."
+
+#: admin.php:81
+msgid "Text For Next Page"
+msgstr "Κείμενο Επόμενης Σελίδας"
+
+#: admin.php:75
+msgid "Text For Previous Page"
+msgstr "Κείμενο Προηγούμενης Σελίδας"
+
+#: admin.php:67
+msgid "Text For Last Page"
+msgstr "Κείμενο Τελευταίας Σελίδας"
+
+#: admin.php:59
+msgid "Text For First Page"
+msgstr "Κείμενο Πρώτης Σελίδας"
+
+#: admin.php:51
+msgid "Text For Page"
+msgstr "Κείμενο Σελίδας"
+
+#: admin.php:47 admin.php:55
+msgid "The page number."
+msgstr "Ο αριθμός σελίδας."
+
+#: admin.php:43
+msgid "Text For Current Page"
+msgstr "Κείμενο Τρέχουσας Σελίδας"
+
+#: admin.php:39 admin.php:63 admin.php:71
+msgid "The total number of pages."
+msgstr "Ο συνολικός αριθμός των σελίδων."
+
+#: admin.php:38
+msgid "The current page number."
+msgstr "Ο τρέχων αριθμός σελίδας."
+
+#: admin.php:33
+msgid "Text For Number Of Pages"
+msgstr "Κείμενο Αριθμού Των Σελίδων"
+
+#: admin.php:10
+msgid "PageNavi"
+msgstr "PageNavi"
+
+#: admin.php:9
+msgid "PageNavi Settings"
+msgstr "Ρυθμίσεις PageNavi"
